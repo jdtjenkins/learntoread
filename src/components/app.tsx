@@ -46,7 +46,7 @@ export function App() {
 
                 <Show when={words().length > 0}>
                     <Show when={wordsStatus().length < words().length}>
-                        <h1 class="text-center text-4xl font-bold">{ words()[currentWordIndex()] }</h1>
+                        <h1 class="w-full text-center text-4xl font-bold text-wrap px-4">{ words()[currentWordIndex()] }</h1>
 
                         <div class="fixed bottom-[70px] w-full px-4">
                             <div class="w-full flex justify-around gap-4">
