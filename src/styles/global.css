@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+   themes: light --default, dark --prefersdark;
+};
+@plugin "daisyui/theme" {
+   name: "light";
+   default: true;
+   --radius-box: 1rem;
+   --radius-field: 2rem;
+   --radius-selector: 1rem;
+}
+@plugin "daisyui/theme" {
+   name: "dark";
+   default: false;
+   --radius-box: 1rem;
+   --radius-field: 2rem;
+   --radius-selector: 1rem;
+}
